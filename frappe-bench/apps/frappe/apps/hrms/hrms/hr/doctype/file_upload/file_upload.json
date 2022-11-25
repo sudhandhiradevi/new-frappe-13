@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-02 17:09:29.994974",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "file_upload",
+  "attach_files"
+ ],
+ "fields": [
+  {
+   "fieldname": "file_upload",
+   "fieldtype": "Button",
+   "label": "File Upload"
+  },
+  {
+   "fieldname": "attach_files",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Files"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-02 17:57:03.486270",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "File Upload",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

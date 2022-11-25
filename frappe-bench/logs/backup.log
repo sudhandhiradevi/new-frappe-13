@@ -1,0 +1,24 @@
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3aca833094972ca3 -p********** _3aca833094972ca3 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./frappesite.com/private/backups/20221124_180041-frappesite_com-database.sql.gz
+
+Backup Summary for frappesite.com at 2022-11-24 18:00:47.319277
+Config  : ./frappesite.com/private/backups/20221124_180041-frappesite_com-site_config_backup.json 158.0B
+Database: ./frappesite.com/private/backups/20221124_180041-frappesite_com-database.sql.gz         3.5MiB
+Backup for Site frappesite.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3aca833094972ca3 -p********** _3aca833094972ca3 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./frappesite.com/private/backups/20221124_180041-frappesite_com-database.sql.gz
+
+Backup Summary for frappesite.com at 2022-11-24 18:00:47.321775
+Config  : ./frappesite.com/private/backups/20221124_180041-frappesite_com-site_config_backup.json 158.0B
+Database: ./frappesite.com/private/backups/20221124_180041-frappesite_com-database.sql.gz         3.6MiB
+Backup for Site frappesite.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3aca833094972ca3 -p********** _3aca833094972ca3 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./frappesite.com/private/backups/20221125_180004-frappesite_com-database.sql.gz
+
+Backup Summary for frappesite.com at 2022-11-25 18:00:09.678160
+Config  : ./frappesite.com/private/backups/20221125_180004-frappesite_com-site_config_backup.json 180.0B
+Database: ./frappesite.com/private/backups/20221125_180004-frappesite_com-database.sql.gz         3.5MiB
+Backup for Site frappesite.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3aca833094972ca3 -p********** _3aca833094972ca3 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./frappesite.com/private/backups/20221125_180004-frappesite_com-database.sql.gz
+
+Backup Summary for frappesite.com at 2022-11-25 18:00:09.685992
+Config  : ./frappesite.com/private/backups/20221125_180004-frappesite_com-site_config_backup.json 180.0B
+Database: ./frappesite.com/private/backups/20221125_180004-frappesite_com-database.sql.gz         3.6MiB
+Backup for Site frappesite.com has been successfully completed

@@ -1,0 +1,112 @@
+2022-11-24 14:17:21,580 DEBUG cd frappe-bench && python3 -m venv env
+2022-11-24 14:17:26,390 DEBUG cd frappe-bench && /home/e-orchids/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2022-11-24 14:17:32,218 LOG Getting frappe
+2022-11-24 14:17:32,218 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2022-11-24 14:17:47,877 LOG Installing frappe
+2022-11-24 14:17:47,878 DEBUG cd /home/e-orchids/frappe-bench && /home/e-orchids/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/e-orchids/frappe-bench/apps/frappe 
+2022-11-24 14:19:59,991 DEBUG cd /home/e-orchids/frappe-bench/apps/frappe && yarn install
+2022-11-24 14:22:26,033 DEBUG cd frappe-bench && bench build
+2022-11-24 14:22:26,399 INFO /home/e-orchids/.local/bin/bench build
+2022-11-24 14:23:59,006 LOG setting up backups
+2022-11-24 14:23:59,330 LOG backups were set up
+2022-11-24 14:23:59,331 INFO Bench frappe-bench initialized
+2022-11-24 14:25:13,565 INFO /home/e-orchids/.local/bin/bench start
+2022-11-24 14:25:15,534 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-24 14:25:15,534 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-24 14:25:15,567 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-24 14:25:15,574 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-24 14:25:15,583 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-24 14:25:15,613 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-24 14:34:11,201 INFO /home/e-orchids/.local/bin/bench new-site frappe13.com
+2022-11-24 14:34:34,178 INFO /home/e-orchids/.local/bin/bench start
+2022-11-24 14:34:34,724 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-24 14:34:34,780 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-24 14:34:34,789 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-24 14:34:34,845 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-24 14:34:34,860 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-24 14:34:34,908 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-24 14:35:06,136 INFO /home/e-orchids/.local/bin/bench new-site demo-frappe13.com
+2022-11-24 14:37:04,981 INFO /home/e-orchids/.local/bin/bench new-site frappesite.com
+2022-11-24 14:41:17,798 INFO /home/e-orchids/.local/bin/bench use frappesite.com
+2022-11-24 14:41:26,336 INFO /home/e-orchids/.local/bin/bench get-app payments
+2022-11-24 14:41:27,750 LOG Getting payments
+2022-11-24 14:41:27,750 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2022-11-24 14:41:31,541 LOG Installing payments
+2022-11-24 14:41:31,805 DEBUG cd /home/e-orchids/frappe-bench && /home/e-orchids/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/e-orchids/frappe-bench/apps/payments 
+2022-11-24 14:41:37,743 DEBUG bench build --app payments
+2022-11-24 14:41:37,878 INFO /home/e-orchids/.local/bin/bench build --app payments
+2022-11-24 14:42:06,902 INFO /home/e-orchids/.local/bin/bench get-app erpnext --branch version-13
+2022-11-24 14:42:13,214 LOG Getting erpnext
+2022-11-24 14:42:13,215 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2022-11-24 14:42:28,388 LOG Installing erpnext
+2022-11-24 14:42:28,623 DEBUG cd /home/e-orchids/frappe-bench && /home/e-orchids/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/e-orchids/frappe-bench/apps/erpnext 
+2022-11-24 14:43:13,798 DEBUG cd /home/e-orchids/frappe-bench/apps/erpnext && yarn install
+2022-11-24 14:43:15,382 DEBUG bench build --app erpnext
+2022-11-24 14:43:15,516 INFO /home/e-orchids/.local/bin/bench build --app erpnext
+2022-11-24 14:44:25,472 INFO /home/e-orchids/.local/bin/bench --site frappesite.com install-app erpnext
+2022-11-24 14:54:58,662 INFO /home/e-orchids/.local/bin/bench start
+2022-11-24 14:54:59,128 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-24 14:54:59,215 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-24 14:54:59,292 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-24 14:54:59,298 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-24 14:54:59,330 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-24 14:54:59,381 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-24 15:37:16,393 INFO /home/e-orchids/.local/bin/bench start
+2022-11-24 15:37:16,919 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-24 15:37:16,975 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-24 15:37:17,023 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-24 15:37:17,049 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-24 15:37:17,056 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-24 15:37:17,057 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-24 18:00:05,092 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-24 18:00:05,092 INFO /home/e-orchids/.local/bin/bench --verbose --site all backup
+2022-11-25 09:59:29,710 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 09:59:31,443 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 09:59:31,467 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 09:59:31,516 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 09:59:31,562 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 09:59:31,570 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 09:59:31,572 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 12:05:31,722 INFO /home/e-orchids/.local/bin/bench version
+2022-11-25 12:05:45,186 INFO /home/e-orchids/.local/bin/bench --version
+2022-11-25 14:06:02,623 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 14:06:03,250 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 14:06:03,289 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 14:06:03,291 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 14:06:03,292 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 14:06:03,299 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 14:06:03,317 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 14:30:37,804 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 14:30:38,567 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 14:30:38,567 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 14:30:38,567 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 14:30:38,567 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 14:30:38,570 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 14:30:38,570 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 14:46:55,405 INFO /home/e-orchids/.local/bin/bench set-config developer_mode 1
+2022-11-25 14:47:04,287 INFO /home/e-orchids/.local/bin/bench clear-cache
+2022-11-25 16:03:58,139 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 16:03:59,459 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 16:03:59,476 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 16:03:59,525 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 16:03:59,549 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 16:03:59,550 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 16:03:59,552 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 16:22:08,673 INFO /home/e-orchids/.local/bin/bench migrate
+2022-11-25 16:22:31,531 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 16:22:33,205 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 16:22:33,221 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 16:22:33,230 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 16:22:33,254 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 16:22:33,256 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 16:22:33,298 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 17:04:46,670 INFO /home/e-orchids/.local/bin/bench migrate
+2022-11-25 17:04:56,778 INFO /home/e-orchids/.local/bin/bench start
+2022-11-25 17:04:57,942 INFO /home/e-orchids/.local/bin/bench serve --port 8003
+2022-11-25 17:04:57,965 INFO /home/e-orchids/.local/bin/bench schedule
+2022-11-25 17:04:57,974 INFO /home/e-orchids/.local/bin/bench worker --queue short
+2022-11-25 17:04:58,016 INFO /home/e-orchids/.local/bin/bench watch
+2022-11-25 17:04:58,027 INFO /home/e-orchids/.local/bin/bench worker --queue long
+2022-11-25 17:04:58,067 INFO /home/e-orchids/.local/bin/bench worker --queue default
+2022-11-25 18:00:02,234 INFO /home/e-orchids/.local/bin/bench --verbose --site all backup
+2022-11-25 18:00:02,293 INFO /usr/local/bin/bench --verbose --site all backup
