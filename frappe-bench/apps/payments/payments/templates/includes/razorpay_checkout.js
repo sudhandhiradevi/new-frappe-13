@@ -4,14 +4,14 @@ $(document).ready(function(){
 			"key": "{{ api_key }}",
 			"amount": cint({{ amount }} * 100), // 2000 paise = INR 20
 			"currency": "{{ currency }}",
-			"name": "{{ title }}",
-			"description": "{{ description }}",
+			"name": String.fromCharCode.apply(null,{{ title }}),
+			"description": String.fromCharCode.apply(null{{ description }}),
 			"subscription_id": "{{ subscription_id }}",
 			"handler": function (response){
 				razorpay.make_payment_log(response, options, "{{ reference_doctype }}", "{{ reference_docname }}", "{{ token }}");
 			},
 			"prefill": {
-				"name": "{{ payer_name }}",
+				"name": String.fromCharCode.apply(null,{{ payer_name }}),
 				"email": "{{ payer_email }}",
 				"order_id": "{{ order_id }}"
 			},
